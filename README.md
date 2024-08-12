@@ -1,76 +1,59 @@
 HEAD
 
-# To-do-list-tscm
+# T0-DO List
 
 TO-DO List | Using React
 
-# Getting Started with Create React App
+## Descrição
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é uma aplicação de lista de tarefas (To-do list) desenvolvida com React. Ele permite aos usuários adicionar, visualizar e remover tasks, além de contar o número de tarefas concluídas. A aplicação também exibe uma piada do Chuck Norris a cada 5 segundos, usando a API do Chuck Norris.
 
-## Available Scripts
+## Funcionalidades
 
-In the project directory, you can run:
+- **Adicionar Tasks**: Adicione novas tarefas com nome e descrição.
+- **Remover Tasks**: Remova tarefas da lista.
+- **Marcar Tasks como Concluídas**: Marque tarefas como concluídas.
+- **Contador de Tasks Concluídas**: Exibe o número total de tarefas concluídas.
+- **Piada do Chuck Norris**: Mostra uma nova piada a cada 5 segundos.
+- **Armazenamento Local**: As tarefas são armazenadas localmente no navegador.
 
-### `npm start`
+## Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: Biblioteca JavaScript para construir interfaces de usuário.
+- **React Hook Form**: Biblioteca para gerenciar formulários em React.
+- **React Query**: Biblioteca para gerenciamento de estado de servidor.
+- **Axios**: Cliente HTTP para fazer requisições à API.
+- **Bootstrap Icons**: Ícones do Bootstrap utilizados na interface.
+- **CSS**: Para estilização da aplicação.
+- **API do Chuck Norris**: Usada para exibir piadas.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Instalação
 
-### `npm test`
+Para rodar este projeto localmente, siga os passos abaixo:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clone o repositório:**
 
-### `npm run build`
+   git clone https://github.com/gabrielameloch/to-do-list-tscm.git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Navegue até o diretório do projeto:**
+   
+   cd to-do-list-tscm
+   
+3.**Instale as dependências**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4.**Inicie a aplicação**
 
-### `npm run eject`
+npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+A aplicação estará disponível em http://localhost:3000.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Utilização**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Adicionar Task: Preencha o formulário de adicionar nova tarefa e clique em "Add Task".
+Remover Task: Clique no ícone de "X" ao lado da tarefa que deseja remover.
+Chekc: Clique no ícone de check ao lado da task para marcá-la como concluída.
+Ver Tarefas Concluídas: O contador de tarefas concluídas será atualizado automaticamente.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
