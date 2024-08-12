@@ -52,8 +52,9 @@ A aplicação estará disponível em http://localhost:3000.
 
 **Utilização**
 
-Adicionar Task: Preencha o formulário de adicionar nova tarefa e clique em "Add Task".
-Remover Task: Clique no ícone de "X" ao lado da tarefa que deseja remover.
-Chekc: Clique no ícone de check ao lado da task para marcá-la como concluída.
-Ver Tarefas Concluídas: O contador de tarefas concluídas será atualizado automaticamente.
+**Adicionar Task:** Preencha o formulário de adicionar nova tarefa e clique em "Add Task".
+
+**Remover Task:** Clique no ícone de "X" ao lado da tarefa que deseja remover.
+**Chekc:** Clique no ícone de check ao lado da task para marcá-la como concluída.
+**Ver Tarefas Concluídas:** O contador de tarefas concluídas será atualizado automaticamente.
 
