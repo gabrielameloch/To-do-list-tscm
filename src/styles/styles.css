@@ -1,0 +1,447 @@
+:root {
+  --color-grey: #333333;
+  --color-pink: #ffa5a5;
+  --color-white: #ffffff;
+}
+
+html,
+body {
+  font-family: "poppins", system-ui;
+  background-color: var(--color-grey);
+  color: var(--color-white);
+  padding: 0;
+  max-height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.poppins-thin {
+  font-family: "Poppins", system-ui;
+  font-weight: 100;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", system-ui;
+  font-weight: 600;
+}
+
+.inter-uniquifier {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  position: absolute;
+  left: 35vh;
+  font-family: "Poppins", system-ui;
+  font-weight: 600;
+  font-size: 6vh;
+  line-height: 9vh;
+  color: #ffffff;
+}
+
+.to-bold {
+  font-family: "poppins", system-ui;
+  font-weight: 600;
+}
+
+.day-thin {
+  font-family: "poppins", system-ui;
+  font-weight: 100;
+}
+
+h2 {
+  position: absolute;
+  line-height: 17.5vh;
+  left: 32.5vh;
+  padding: 3.7vh;
+  font-family: "Poppins", system-ui;
+  font-weight: 100;
+  font-size: 2vh;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.wake-thin {
+  font-family: "poppins", system-ui;
+  font-weight: 100;
+}
+
+.wake-bold {
+  font-family: "poppins", system-ui;
+  font-weight: 600;
+}
+
+.toDoFinished {
+  height: 9vh;
+  width: 44vh;
+  text-align: center;
+  font-size: 2.8vh;
+  font-family: "poppins", system-ui;
+  font-weight: 600;
+  padding: 3vh;
+  position: absolute;
+  left: 137vh;
+  top: 22vh;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 1vh;
+}
+
+.task-count {
+  font-family: "poppins", system-ui;
+  font-weight: bold;
+
+  font-size: 6.5vh;
+  text-align: center;
+  padding: 10vh;
+  display: inline-block;
+  margin-top: -11vh;
+}
+.reset-icon {
+  font-size: 1vh;
+  color: #ffa5a5;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+.form-container {
+  position: absolute;
+  width: 44vh;
+  height: 32.2vh;
+  left: 137vh;
+  top: 35vh;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 1vh;
+  padding: 3vh;
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.toDo {
+  font-family: "poppins", system-ui;
+  font-weight: 600;
+  font-size: 2.8vh;
+  width: 94vh;
+  height: 50vh;
+  line-height: 4.4vh;
+  text-align: left;
+  position: absolute;
+  left: 33vh;
+  top: 22vh;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 3vh;
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.toDo::-webkit-scrollbar {
+  width: 0px; /* Oculta a barra de rolagem horizontal */
+  background: transparent;
+}
+
+.task-item {
+  position: relative;
+  width: 88vh;
+  height: 7.8vh;
+  padding: -2vh;
+  left: -5vh;
+  border-radius: 1vh;
+  display: flex;
+  padding-inline-start: 3%;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 1.5vh 0;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.task-actions {
+  position: absolute;
+  top: -1vh;
+  right: 0;
+  display: flex;
+  gap: 0.2vh;
+}
+
+.task-button {
+  background: transparent;
+  cursor: pointer;
+  font-size: 2.5vh;
+  color: rgba(255, 165, 165, 1);
+  width: 3vh;
+  height: 3vh;
+  border-radius: 10vh;
+  display: flex;
+  padding: 0;
+}
+
+.check {
+  position: relative;
+  right: 1 vh;
+  top: -2vh;
+  font-size: 3vh;
+}
+.delete {
+  position: relative;
+  right: -1.5vh;
+  top: -2vh;
+  font-size: 3vh;
+}
+
+.delete:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.check:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.task-name {
+  font-size: 2.2vh;
+  font-family: "poppins", system-ui;
+  font-weight: 600;
+  margin-bottom: -2vh;
+  margin-top: 0.9vh;
+  color: #ffffff;
+}
+
+.task-description {
+  font-family: "poppins", system-ui;
+  font-weight: 100;
+  font-size: 1.6vh;
+  color: rgba(255, 255, 255, 0.6);
+}
+.task-created-at {
+  font-family: "poppins", system-ui;
+  font-weight: 400;
+  position: absolute;
+  right: 2vh;
+  bottom: 1vh;
+  font-size: 1.7vh;
+  line-height: 2vh;
+  color: #888;
+}
+
+.title-form {
+  font-family: "poppins", system-ui;
+  font-size: 2.9vh;
+  font-weight: 600;
+  line-height: 3vh;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 1vh;
+  color: rgba(255, 255, 255, 1);
+}
+
+.label-taskName,
+.label-taskDescription {
+  font-family: "Poppins", system-ui;
+  font-size: 2.1vh;
+  font-weight: 100;
+  margin-bottom: 0.8vh;
+  display: flex;
+  text-align: left;
+  color: #ffffff;
+  padding: -0.9vh;
+}
+.label-taskDescription {
+  margin-top: 1.5vh;
+}
+
+/*placeholder*/
+input {
+  width: 40vh;
+  padding: 2vh;
+  margin-top: 1vh;
+  height: 1.5vh;
+  border: 0.1vh solid rgba(255, 255, 255, 0.05);
+  border-radius: 1.2vh;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.input-error {
+  border-color: #e89d9d;
+}
+
+.input-field::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.8vh;
+  font-weight: 100;
+}
+.input-field:focus::placeholder {
+  color: #ffa5a5;
+  font-family: "poppins", system-ui;
+  font-size: 1.8vh;
+  font-weight: 100;
+}
+
+.error-message {
+  display: none;
+}
+
+button {
+  font-family: "poppins", system-ui;
+  text-align: center;
+  font-size: 1.8vh;
+  font-weight: 400;
+  width: 44vh;
+  height: 5.5vh;
+  padding: 1vh;
+  margin-top: 15px;
+  border: 0px solid #ffa5a5;
+  border-radius: 5px;
+  background: #ffffff;
+}
+
+.button-toDo:hover {
+  background-color: #ffa5a5;
+}
+
+.chuck-norris-joke {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "poppins", system-ui;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 1.5vh;
+  flex: 1;
+  width: 100%;
+  padding: 10px;
+  margin-top: 74vh;
+  margin-left: 63vh;
+}
+
+.chuck-signature {
+  font-family: "poppins", system-ui;
+  font-weight: 600;
+  font-size: 1.5vh;
+  margin-top: 0.7vh;
+}
+
+.footer {
+  font-family: "poppins", system-ui;
+  font-weight: 100;
+  font-size: 1.5vh;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.6);
+
+  padding: 1vh 0;
+  margin-bottom: 2.5vh;
+  margin-left: 62.2vh;
+}
+
+.footer .bi-heart-fill {
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 5px;
+  font-size: 1.4vh;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px) {
+  .task-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .toDo,
+  .toDoFinished,
+  .toDo-container {
+    width: 90%;
+    max-width: 600px;
+  }
+
+  .toDo {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .footer {
+    width: 90%;
+    max-width: 600px;
+    left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Ajuste do layout quando a largura da tela for menor que 768px */
+  .header {
+    width: 100%;
+    text-align: center;
+  }
+
+  h1,
+  h2 {
+    text-align: center;
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-bottom: 20px;
+  }
+
+  .toDo,
+  .toDoFinished,
+  .toDo-container {
+    width: 100%;
+    max-width: 100%;
+    left: 0;
+    top: 0;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ajuste do layout quando a largura da tela for menor que 480px */
+  .header {
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  .task-container {
+    padding: 10px;
+  }
+
+  .toDo,
+  .toDoFinished,
+  .toDo-container {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .task-item {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  .footer {
+    font-size: 12px;
+    padding: 10px;
+    width: 100%;
+    max-width: 100%;
+  }
+}
